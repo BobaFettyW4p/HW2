@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.5)
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(SquaredVectors HW2-1-1.cpp)
+add_executable(DistanceFromOrigin HW2-1-2.cpp)
+add_executable(InnerProduct HW2-1-3.cpp)
+add_executable(FourPartAccumulate HW2-1-4.cpp)
+add_executable(MedianSort HW2-2-1.cpp)
+add_executable(MedianPartialSort HW2-2-2.cpp)
+add_executable(MedianNthElement HW2-2-3.cpp)
+add_executable(MedianTemplated HW2-2-4.cpp)
+add_executable(PascalClassful HW2-3.cpp)
