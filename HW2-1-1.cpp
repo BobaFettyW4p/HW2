@@ -20,7 +20,7 @@ std::vector<double> squareValues(const std::vector<double>& input) {
 
 int main() {
     //initialize an empty vector to store user-prompted elements
-    //and an into to store the total number of desired elements in the vector
+    //and an int to store the total number of desired elements in the vector
     std::vector<double> input;
     int n;
 
