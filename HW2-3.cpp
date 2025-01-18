@@ -4,6 +4,11 @@
 #include <fmt/format.h>
 #include <string>
 
+// this initializes my class PascalsTriangle
+// I think this is a big improvement on my original program because it increases readability
+// the addition of a public method generateAndPrint improves readability and maintains functionality of my original classless version
+// The addition of two private methods generateRow and printRow are helper methods for the public generateAndPrint function and improve readability within the class itself
+// Creating a PascalsTriangle class also makes the script more extendable in the event we wanted to further manipulate our Pascals Triangle after creating it (for example, if we wanted to square all the values and then print the triangle)
 class PascalsTriangle {
 public:
     PascalsTriangle(int height) : height(height) {}
