@@ -32,7 +32,8 @@ int main() {
 
     std::cout << "Enter the number of elements in the vector: ";
     std::cin >> n;
-
+    // error handling to ensure the function is not called when n is set to 0
+    if (n != 0) {
     std::cout << "Enter " << n << " elements. Hit enter after entering each element:" << "\n";
     for (int i=0; i<n; i++) {
         double value;
@@ -42,5 +43,10 @@ int main() {
 
     double result = median(input);
     std::cout << "The median is: " << result << "\n";
+    }
+    //error handling if user tries to set a vector size of 0
+    else {
+        std::cout << "No elements in the vector to calculate the median.";
+    }
     return 0;
 }
