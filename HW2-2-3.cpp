@@ -19,7 +19,7 @@ double median(std::vector<double>& input) {
         return input[length / 2];
     }
     else { // if the vector length is even, we need to place the other middle element in its correct postion, then return the average of both middle elements
-        std::nth_element(input.begin(), input.begin() + length / 2, input.end());
+        std::nth_element(input.begin(), input.begin() + length / 2-1, input.end());
         
         return (input[length / 2 - 1]+ input[length / 2]) / 2.0;
     }
