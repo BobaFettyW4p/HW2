@@ -16,7 +16,7 @@ double median(std::vector<double>& input) {
     // Sample output from my benchmarking program indicated that using std::sort was considerably faster
     // While std::partial_sort has a faster theoretical runtime, its operations have a higher computational overhead associated with them
     // Thus, while std::partial_sort is re-arranging fewer elements, it will take longer to re-arrange compared to std::sort, especially for our median function, which must re-arrange half of all the elements to perform the needed operations
-    // If we needed to isolate a much smaller subset (say, if our vector was one million elements in length, and we only needed the first 10 sorted elements), at that point, std::partial_sort would become faster
+    // If we needed to isolate a much smaller subset (say, if our vector was one million elements in length, and we only needed the first 10 sorted elements), at that point, std::partial_sort could become faster
     std::partial_sort(input.begin(), input.begin() + length / 2 + 1, input.end());
 
     if ( length % 2 == 0) {
